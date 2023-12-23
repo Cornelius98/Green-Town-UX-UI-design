@@ -1,0 +1,1863 @@
+/***************************
+* 
+* AUXILLARY: Classes
+*
+*****************************/
+*{
+    margin:0;
+    padding:0;
+}
+html 
+{
+    scroll-behavior: smooth;
+    overflow: none;
+}
+
+main 
+{
+    overflow: none;
+}
+.e-notice 
+{
+    width: 100%;
+    padding: 1%;
+    font-size: small;
+    border-radius: 5px;
+    text-align: center;
+    color: #eee;
+    background-color: brown;
+    font-weight: 100;
+}
+.e-success
+{
+    text-align: center;
+    color: #eee;
+    background-color: lightskyblue;
+    width: 100%;
+    padding: 1%;
+    font-size: small;
+    border-radius: 5px;
+}
+.mb-top-most,.mb-nav,.slidein-nav
+{
+    display: none;
+}
+.property-wrap 
+{
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.props-main
+{
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.aux-spm-row-even 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.aux-spm-row-btwn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.aux-spm-row-center 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.aux-spm-row-start
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.aux-spm-row-end 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.aux-spm-column-start
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.aux-spm-column-center
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aux-spm-column-end
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.aux-raw-white
+{
+    background-color: rgb(255, 255, 255);
+    margin-right: 8%;
+}
+.aux-property-tile
+{
+    background-color: rgb(255, 255, 255);
+    margin-right: 35%;
+    border-radius: 10px;
+    padding: 2%;
+}
+.aux-property-tile-mrn
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 2%;
+}
+.aux-raw-grey
+{
+    background-color: rgba(240, 240, 240, 0.795);
+}
+.aux-updown-sp 
+{
+    margin: 5% 0% 5% 0%;
+}
+.aux-row-sp-down 
+{
+    margin-bottom: 5%;
+}
+.aux-row-sp-up 
+{
+    margin-top: 5%;
+}
+.aux-sect-sp-top-bottom 
+{
+    padding: 5% 0% 10% 0%;
+}
+.aux-spm-theme-down
+{
+    padding-bottom: 5%;
+}
+/***************************
+* 
+* PROPERTY REVIEW CLASSES
+*
+*****************************/
+.property-image-wrap
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70vh;
+    padding: 2px;
+}
+.property-image-wrap .propert-cover 
+{
+    width: 50%;
+}
+.propert-cover img 
+{
+    width: 100%;
+    height: 69vh;
+}
+.property-image-wrap .propert-pictures
+{
+    width: 50%;
+    text-align: center;
+    overflow-x: visible;
+    padding:0;
+    margin:0;
+}
+.propert-pictures img 
+{
+    width: 220px;
+    height: 155px; 
+    margin-top: 5px;
+}
+.details-price-views 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.details-price-views .details
+{
+    width: 60%;
+}
+.details-price-views .pricing
+{
+    width: 30%;
+}
+.details-price-views .pricing,
+.details-price-views .views
+{
+    width: 20%;
+}
+.details-price-views 
+{
+    background-color: rgb(255, 255, 255);
+}
+.rooms-summary .room-shift 
+{
+    padding-left: 2%;
+}
+.props-views 
+{
+    padding-top: 5%;
+}
+.props-views .dot 
+{
+    margin-bottom: 5%;
+}
+.pricing .name
+{
+    margin-top: 5%;
+}
+.sp-wrap
+{
+    margin: 5%;
+}
+.sp-wrap-01
+{
+    padding: 2% 5% 2% 5%;
+}
+.prop-line-break 
+{
+    margin: 4% 0% 4% 0%;
+}
+.hr-break 
+{
+    margin-right: 35%;
+}
+.desc-title 
+{
+    padding-bottom: 2%;
+}
+.description-email 
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.description-email .description 
+{
+    width: 75%;
+}
+.description-email .description-wrap
+{
+    width: 75%;
+    margin-right: 8%;
+}
+.description-email .email-wrap
+{
+    width: 25%;
+    height: inherit;
+}
+.property-form 
+{
+    padding: 5%;
+}
+.property-form .form-group
+{
+    position: relative;
+    margin-top: 8%;
+}
+.property-form .form-group i
+{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: rgb(58, 58, 153);
+}
+.property-form .form-group input
+{
+    font-size: small;
+    padding-left: 10%;
+    background-color: lightgrey;
+    border-radius: 0%;
+}
+.property-form .form-group textarea
+{
+    font-size: small;
+    padding-left: 7%;
+    background-color: lightgrey;
+}
+.proprty-type 
+{
+    font-size: small;
+    text-transform: uppercase;
+    color: lightgrey;
+}
+.property-name 
+{
+    line-height: 15px;
+}
+.desc-text 
+{
+    font-size: small;
+}
+.property-stats  
+{
+    font-size: small;
+    margin-bottom: 5%;
+}
+.description-wrap 
+{
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    border-radius: 10px;
+}
+.stats-card 
+{
+    width: 20%;
+    background-color: orange;
+    height: 100px;
+    padding: 1%;
+    margin: 3px;
+}
+.stats-card-nums,
+.stats-icon i 
+{
+    text-align: right;
+    margin-top: 20px;
+}
+.stats-icon 
+{
+    width: 20%;
+}
+.stats-card-nums
+{
+    width: 80%;
+}
+.start-card-2 
+{
+    background-color: transparent;
+}
+.start-card-2-mr 
+{
+    margin-left: 5%;
+}
+.address-wrap .address
+{
+    width: 70%;
+    padding: 1%;
+    margin-right: 5%;
+}
+.address-wrap .address .rust 
+{
+    margin-top: 1%;
+}
+.address-wrap .map-area 
+{
+    width: 30%;
+}
+.google-map-buttns 
+{
+    margin-top: 5%;
+}
+.nearby .near 
+{
+    width: 20%;
+    display: inline-block;
+    padding: 2%;
+}
+.property-feature 
+{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.property-featured
+{
+    font-size: smaller;
+    color: lightgrey;
+}
+/***************************
+* 
+* FOOTER CLASSES
+*
+*****************************/
+.footer
+{
+    background: url("./assets/agric.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin-top: 10%;
+}
+.footer .transparency 
+{
+    background-color: black;
+    padding: 3% 0% 5% 0%;
+    opacity: 0.865667;
+}
+.footer-socials 
+{
+    text-align: right;
+}
+.footer ul 
+{
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.footer h5 
+{
+    color: white;
+    margin-bottom: 10%;
+}
+.footer ul li a,.footer a 
+{
+    text-decoration: none;
+    color: grey;
+}
+.footer .footer-quick-links a
+{
+    margin: 1%;
+}
+.footer .omae 
+{
+    color: orange;
+}
+.footer .omae-software
+{
+    color: rgb(231, 231, 231);
+}
+/***************************
+* 
+* TOP NAVIGATION CLASSES
+*
+*****************************/
+header
+{
+    background: url("./assets/houses/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+.carousel-bg-1 
+{
+    background: url("./assets/bg/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+.carousel-bg-2 
+{
+    background: url("./assets/bg/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+.carousel-bg-3 
+{
+    background: url("./assets/bg/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+.hero-text 
+{
+   margin-top: 28%;
+}
+.hero-text-page
+{
+   margin-top: 15%;
+}
+.htransparency 
+{
+    background-color: black;
+    height: 100vh;
+    opacity: 0.77678;
+    padding-top: 2%;
+}
+.htransparency-page
+{
+    background-color: black;
+    height: 70vh;
+    opacity: 0.77678;
+    padding-top: 2%;
+}
+header ul
+{
+    text-align: left;
+}
+header ul
+{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+header ul li
+{
+    display: inline-block;
+    text-align: left;
+}
+header ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    font-size: small;
+}
+.props-nav-link 
+{
+    padding-left: 2%;
+}
+.h-icons .icons
+{
+    text-align: right;
+}
+.h-icons .fa
+{
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    padding: 3%;
+    color: white;
+    border-radius: 125px;
+}
+.cool a {
+    /* border: 2px solid red; */
+}
+.cool .fa-search,
+.cool .fa-heart
+{
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    padding: 30%;
+    color: white;
+    border-radius: 125px;
+    margin: 2px;
+}
+.h-icons div 
+{
+    width: 100%;
+}
+.h-contacts 
+{
+    font-size: small;
+}
+.h-contacts .phone
+{
+    padding-right: 2%;
+}
+.break-contacts 
+{
+    margin-bottom: 3%;
+}
+.form-001
+{
+    width: 100%;
+}
+.form-001 .form-group
+{
+    position: relative;
+}
+.form-001 .form-group input 
+{
+    width: 100%;
+    height: 40px;
+    padding: 2%;
+    border-radius: 10px;
+}
+.form-001 .form-group .fa-search 
+{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    color: black;
+}
+/***************************
+* 
+* Premium Homes Section
+*
+*****************************/
+.premium-wrap
+{
+    background-color: rgba(240, 240, 240, 0.795);
+    padding: 5% 0% 10% 0%;
+}
+.premium-theme 
+{
+    padding: 0% 0% 5% 0%;
+}
+.estate-card 
+{
+    position: relative;
+    background-color: whitesmoke;
+}
+.estate-card img 
+{
+    width: 100%;
+    height: 250px;
+}
+.estate-img .estate-taggs 
+{
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    top: 3%;
+}
+.estate-img .estate-gps 
+{
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    top: 47%;
+}
+.estate-img .estate-gps a 
+{
+    background-color: rgb(14, 204, 14);
+    padding: 2%;
+    color: white;
+    border-radius: 5px;
+}
+.estate-brand
+{
+    background-color: rgb(14, 204, 14);
+}
+.estate-nature 
+{
+    background-color: rgb(14, 204, 14);
+}
+.estate-nature ,.estate-brand 
+{
+    padding: 1%;
+    text-transform: uppercase;
+    color: white;
+    font-size: x-small;
+    font-weight: bolder;
+}
+.estate-name .est-name
+{
+    line-height: 15px;
+}
+.estate-name .est-name .estate-property-type 
+{
+    color:grey;
+    font-size: small;
+}
+.estate-transparency 
+{
+    height: 250px;
+    background-color: black;
+}
+.estate-price 
+{
+    background-color: rgb(14, 204, 14);
+    color: white;
+    padding: 3%;
+    border-radius: 125px;
+    font-size: small;
+    position: absolute;
+    top: 49%;
+    right: 6%;
+    text-align: center;
+    line-height: 10px;
+    width: 70px;
+    height: 70px;
+}
+.estate-details
+{
+    padding: 3%;
+}
+.estate-name 
+{
+    margin: 3% 0% 10% 0%;
+}
+.contact-property .fa,
+.contact-property .fab
+{
+    background-color:green;;
+    padding: 3%;
+    color: rgb(255, 255, 255);
+    border-radius: 125px;
+}
+.est-views
+{
+    width: 20%;
+}
+.contact-property 
+{
+    width: 80%;
+    text-align: right;
+}
+/***************************
+* 
+* Properties Section
+*
+*****************************/
+.main-props-wrap 
+{
+    width: 80%;
+}
+.aside-props-wrap
+{
+    width: 20%;
+    margin-top: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+.aside-props-wrap img 
+{
+    width: 100%;
+    border-radius: 10px;
+    height: 512px;
+    background-size: cover;
+    margin-left: 5px;
+}
+.main-props-wrap 
+{
+    height: 515px;
+}
+.main-props-wrap .streteched-props 
+{
+    width: 70%;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+}
+.main-props-wrap .shortened-props 
+{
+    width: 30%;
+    position: relative;
+    height: 250px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.props-transparency 
+{
+    height: 250px;
+    background-color: black;
+    opacity: 0.7756453;
+    border-radius: 10px;
+}
+.aside-props-transparency 
+{
+    height: 512px;
+    padding: 2px;
+    background-color: black;
+    opacity: 0.7756453;
+    border-radius: 10px;
+}
+.streteched-props .props-hero-text,
+.shortened-props .props-hero-text, 
+.aside-props-wrap .props-hero-text 
+{
+    position: absolute;
+    bottom: 2%;
+}
+.main-props-wrap .streteched-props img,
+.main-props-wrap .shortened-props img
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.props-hero-text
+{
+    color: white;
+    line-height: 9px;
+    margin-left: 5%;
+}
+.props-hero-theme
+{
+    font-size: x-large;
+    font-weight: 500;
+}
+.streteched-props .props-hero-text
+{
+    margin-left: 2%;
+}
+.shortened-props .props-hero-text
+{
+    margin-left: 3%;
+}
+/***************************
+* 
+* Rental Properties Section
+*
+*****************************/
+.rental-wrap
+{
+    background-color: rgba(240, 240, 240, 0.795);
+    padding: 5% 0% 10% 0%;
+}
+/***************************
+* 
+* Cities Section
+*
+*****************************/
+.cities-wrap 
+{
+    /* background: url("./assets/houses/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: white; */
+    color: white;
+}
+.citie-card 
+{
+    margin: .5%;
+    position: relative;
+}
+.cities-transparency 
+{
+    background-color: rgb(14, 13, 13);
+}
+.citie-card .props-hero-text 
+{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    margin-left: 2%;
+    text-align: left;
+}
+/***************************
+* 
+* Province Section
+*
+*****************************/
+.state-card 
+{
+    margin: .5%;
+    position: relative;
+}
+.state-transparency 
+{
+    background-color: rgb(255, 255, 255);
+}
+.state-card .props-hero-text 
+{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: left;
+}
+@keyframes slideIn
+{
+    0%{
+        opacity: 0.2432;
+    }
+    50%{
+        opacity: 0.5432;
+    }
+    70%{
+        opacity: 0.6432;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.slide-out 
+{
+    transform: translateX(400%);
+    transition: transform 0.5s ease-out;
+    animation-name: slideIn;
+    animation-timing-function: ease-out;
+}
+.slide-out:nth-of-type(even)
+{
+    transform: translateX(-400%);
+} 
+.slide-out.show {
+    transform: translateX(0%);
+}
+.state-cards 
+{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+.state-cards .aside-props-wrap 
+{
+    min-width: 25%;
+}
+.state-cards .state-card 
+{
+    width: 100%;
+}
+.state-swipe 
+{
+    background-color: rgb(209, 209, 209);
+    padding: 2%;
+    border-radius: 125px;
+}
+.city-swipe 
+{
+    background-color: rgb(19, 19, 19);
+    padding: 2%;
+    border-radius: 125px;
+    color: white;
+}
+.more-swipe 
+{
+    background-color: rgb(14, 204, 14);
+    padding: 2%;
+    border-radius: 125px;
+    color: white;
+}
+.cities-cards 
+{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+}
+.cities-cards .aside-props-wrap 
+{
+    min-width: 25%;
+}
+.citie-cards .state-card 
+{
+    width: 100%;
+}
+.cities-cards .aside-props-wrap:hover,
+.state-cards .aside-props-wrap:hover 
+{
+    transition: 2s;
+    transform: translateY(1%);
+}
+.estate-card:hover
+{
+    transition: all 2s;
+    transform: translateY(5%);
+}
+.streteched-props:hover,
+.shortened-props:hover,
+.aside-props:hover
+{
+    transition: all 2s;
+    transform: scale(0.9);
+    transition-timing-function: ease-out;
+}
+.slidein-nav,.mb-nav
+{
+    display: none;
+}
+.cities-cards-page 
+{
+    overflow-x: hidden;
+    text-align: center;
+}
+.cities-cards-page .aside-props-wrap
+{
+    overflow-x: hidden;
+    display: inline-block;
+}
+.cities-cards-page .aside-props-wrap  
+{
+    min-width: 23%;
+}
+.state-cards-page 
+{
+    overflow-x: hidden;
+    text-align: center;
+}
+.state-cards-page .aside-props-wrap
+{
+    overflow-x: hidden;
+    display: inline-block;
+}
+.state-cards-page .aside-props-wrap  
+{
+    max-width: 23%;
+    min-width: 23%;
+}
+.state-cards-page .state-card 
+{
+    max-width: 23%;
+    min-width: 23%;
+}
+/***************************
+* 
+* Privacy Policy Page
+*
+*****************************/
+.gwa-intro 
+{
+    line-height: 14px;
+}
+.gwa-intro small 
+{
+    font-size: x-small;
+}
+.gwp-wrap 
+{
+    background-color: rgb(243, 243, 243);
+    font-family: Helvetica;
+    overflow-x: hidden;
+}
+.gwp-wrap .container-fluid 
+{
+    padding: 5%;
+}
+.sub-sect 
+{
+    padding-left: 2%;
+}
+.sub-sect-00
+{
+    padding-left: 7%;
+}
+.sub-break 
+{
+    padding-left: 2%; 
+}
+.clause-title 
+{
+    margin-top: 3%;
+}
+/***************************
+* 
+* Realtor Card
+*
+*****************************/
+.realtor-card 
+{
+    /* border: 2px solid red; */
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+.realtor-card .realtor-img 
+{
+    text-align: center;
+}
+.realtor-card img
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 125px;
+    text-align: center;
+}
+.realtor-company 
+{
+    color: rgb(192, 192, 192);
+}
+.realtor-break 
+{
+    margin: 30% 0% 4% 0%;
+}
+.realtor-links .fa,
+.realtor-links .fab
+{
+    background-color: rgb(62, 62, 138);
+    padding: 10%;
+    color: white;
+    border-radius: 125px;
+    margin: 2px;
+}
+.year-word-wrap
+{
+    line-height: 15px;
+}
+.experience 
+{
+    color: grey;
+}
+.projects 
+{
+    text-align: center;
+}
+.projects .estimate
+{
+    background-color: rgb(62, 62, 138);
+    padding: 2%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+.experience .years 
+{
+    line-height: 12px;
+    font-size: medium;
+}
+.realtor-links .engagement 
+{
+    color: rgb(155, 152, 152);
+}
+.more-realtors 
+{
+    background-color: rgb(62, 62, 138);
+    color: white;
+}
+.comapny-card .projects .estimate
+{
+    background-color: rgb(15, 175, 23);
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+.comapny-card .realtor-links .fa,
+.comapny-card .realtor-links .fab
+{
+    background-color: rgb(15, 175, 23);
+    padding: 10%;
+    color: white;
+    border-radius: 125px;
+    margin: 2px;
+}
+.more-companies
+{
+    background-color: rgb(15, 175, 23);
+    color: white;
+}
+.form-002 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.form-002 .form-group 
+{
+    text-align: left;
+    margin: 3px;
+    width: 100%;
+} 
+.form-002 .form-group input, 
+.form-002 .form-group select, 
+.form-002 .form-group select
+ {
+    min-width: 100%;
+    height: 50px;
+    padding: 2%;
+    border: 1px solid grey;
+    outline: none;
+}
+.form-002 .form-group textarea
+{
+    min-width: 100%;
+    padding: 2%;
+    border: 1px solid grey;
+    outline: none;
+}
+.form-002 .search-icon 
+{
+    display: flex;
+    flex-direction: row;
+}
+.form-002 .search-icon .fa-search
+{
+    background-color: green;
+    width: 100px;
+    text-align: center;
+    padding-top: 7%;
+}
+.form-002 .form-group label 
+{
+    color: black;
+    font-weight: bolder;
+}
+.invst-card 
+{
+    position: relative;
+    background-color: whitesmoke;
+}
+.invst-card img 
+{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.invst-details 
+{
+    padding: 10% 2% 3% 2%;
+}
+.invst-text 
+{
+    text-align: right;
+    width: 100%;
+}
+.invst-tagg 
+{
+    text-align: right;
+}
+.inst-tagg-blur 
+{
+    color: lightgrey;
+}
+.invst-details i 
+{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    padding: 5%;
+    border-radius: 125px;
+}
+.act-wrap-001 
+{
+    padding-right: 1%;
+}
+.act-wrap img 
+{
+    width: 100%;
+}
+.major-img 
+{
+    padding: 0;
+    margin: 0;
+}
+.major-img img
+{
+    width: 100%;
+}
+/* .major-options 
+{
+    border-bottom: 1px solid rgb(0, 0, 0);
+} */
+.major-last-two 
+{
+    padding-top: 5%;
+}
+.major-wrap
+{
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 5% 0% 10% 0%;
+}
+.projects
+ {
+    background-color: rgba(241, 255, 254, 0.795);
+
+ }
+ .streteched-props,
+ .shortened-props,
+ .props-hero-text
+ {
+    text-align: left;
+ }
+ .form-002 input[type="file"]{
+    display: none;
+ }
+ .form-002 .fa-image 
+ {
+    color: lightgreen;
+ }
+ .form-002 button 
+ {
+    width: 100%;
+ }
+ .service
+ {
+    margin-top: 5%;
+    text-align: center;
+    padding: 6%;
+ }
+ .service img 
+ {
+    width: 400px;
+    height: 300px;
+ }
+ .service:hover 
+ {
+    background-color: rgb(224, 224, 224);
+    transition: all 2s;
+    transform: scale(0.9);
+ }  
+ #industries 
+{
+    width: 100%;
+    background-image: url('./assets/white-abstract-background-design_23-2148825582.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.indst-text-title
+{
+    text-align:center;
+    color: rgb(133, 130, 130);
+    font-family: arial;
+    margin-bottom: 5%;
+}
+.indst-title 
+{
+    text-align:center;
+    font-weight: bolder;
+    font-family: arial;
+}
+.indst-title-desc
+{
+    text-align:center;
+    padding: 0% 15% 0% 15%;
+    line-height: 15px;
+}
+#industries ul 
+{
+    list-style: none;
+}
+#industries ul li .fa-plus 
+{
+    color: green;
+}
+#industries ul li span 
+{
+    margin-left: 1%;
+}
+#locations 
+{
+    padding: 5%;
+    background-color: rgb(253, 253, 253);
+    font-size: small;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(19,87,185,0.2497373949579832) 0%, rgba(118,69,252,0.6783088235294117) 0%, rgba(69,143,252,0.6783088235294117) 65%);
+}
+.form-wrap form 
+{
+    background-color: none;
+    padding: 5%;
+}
+.form-wrap form input
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: small;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(19,87,185,0.2497373949579832) 0%, rgba(118,69,252,0.6783088235294117) 0%, rgba(69,143,252,0.6783088235294117) 65%);
+}
+.form-wrap form textarea  
+{
+    color: gray;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(19,87,185,0.2497373949579832) 0%, rgba(118,69,252,0.6783088235294117) 0%, rgba(69,143,252,0.6783088235294117) 65%);
+}
+.wrks-card-2 i
+{
+    padding: 2%;
+    color: white;
+    border-radius: 125px;
+}
+.wrks-fade 
+{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.87765;
+}
+.wrks-text-title
+{
+    text-align:center;
+    color: rgb(133, 130, 130);
+    font-family: arial;
+    margin-bottom: 5%;
+}
+.wrks-title 
+{
+    text-align:center;
+    font-weight: bolder;
+    font-family: arial;
+}
+.wrks-title-desc
+{
+    text-align:center;
+    padding: 0% 15% 0% 15%;
+    line-height: 15px;
+}
+.wrks-card 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 5%;
+    color: white;
+}
+.wrks-card i 
+{
+    background-color: rgb(10, 80, 128);
+    padding: 90%;
+    border-radius: 125px;
+    color: rgb(245, 245, 245);
+    margin-right: 20%;
+}
+.wrks-card .wrks-content 
+{
+    margin-left: 5%;
+}
+.wrks-content h4 
+{
+    font-size: medium;
+    color: black;
+}
+.wrks-content p 
+{
+    color: rgb(180, 180, 180);
+    line-height: 18px;
+}
+.notifiation-cards .board .board-title
+{
+    background-color: rgb(182, 0, 0);
+    color: white;
+    padding: 2%;
+}
+.notifiation-cards .board-community .board-title
+{
+    background-color: rgb(182, 0, 0);
+    color: white;
+    padding: 2%;
+}
+.notifiation-cards .board-men .board-title
+{
+    background-color: seagreen;
+    color: white;
+    padding: 2%;
+}
+.notifiation-cards .board-women .board-title
+{
+    background-color: orange;
+    color: white;
+    padding: 2%;
+}
+.notifiation-cards .board 
+{
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+    margin: 2%;
+    border: 1px solid red;
+}
+.board ul 
+{
+    padding-bottom: 2%;
+}
+.notifiation-cards .board-community
+{
+    border: 1px solid red;
+}
+.notifiation-cards .board-men
+{
+    border: 1px solid seagreen;
+}
+.notifiation-cards .board-women
+{
+    border: 1px solid orange;
+}
+.notifiation-cards .board ul
+{
+    margin: 0;
+    padding: 0;
+}
+.notifiation-cards .board ul li 
+{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.application-wrapper 
+{
+    height: 75vh;
+}
+.application-wrapper .hero-text 
+{
+   margin-top: 10%;
+}
+.step 
+{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(29, 151, 45);
+    color: white;
+    border: 125px;
+    text-align: center;
+}
+.apps-steps p span
+{
+    padding-right: 5%;
+    border: 2px solid red;
+}
+.apps-main-wrap
+{
+    background-color: rgb(243, 243, 243);
+    position: relative;
+}
+.w-bg 
+{
+    background-color: rgb(243, 243, 243);
+}
+.apps-form-wrap 
+{
+    position: absolute;
+    top: -10%;
+    right: 0%;
+}
+.apps-form-wrap .form-002 label 
+{
+    color: rgb(29, 151, 45);
+}
+.apps-form-wrap .form-002 .form-group
+ {
+    
+    margin-top: 5%;
+}
+.app-footer 
+{
+    margin-top: 40%;
+}
+.form-003 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 4%;
+}
+.form-003 .form-group 
+{
+    display: flex;
+    flex-direction: column;
+}
+.form-003 .form-group input,
+.form-003 .form-group select 
+{
+    height: 50px;
+    width: 200px;
+    padding: 2%;
+    margin: 2px;
+}
+.filter-btn 
+{
+    width: 70px;
+    background-color: green;
+    color: white;
+}
+.loader-wrapper 
+{
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    z-index: 900000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin:0;
+}
+.loader-fader 
+{
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    height: 100%;
+    opacity: .945;
+    overflow: none;
+}
+.loader-wrapper 
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: none;
+}
+.loader-notifier
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content:center;
+}
+.loader-notifier .notiers 
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom:1%;
+
+}
+.loader-notifier h6,.notice
+{
+    font-size: medium;
+    font-family: 'Calibri';
+    color:grey;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+.progress-counter
+{
+    font-size: medium;
+    font-family: 'Calibri';
+    color:grey;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+.i-cover 
+{
+    width: 100%;
+    margin-top: 15%;
+    text-align: center;
+}
+.i-cover h1
+{
+    line-height: 35px;
+    font-family: arial;
+}
+.i-cover .fa-mountain-sun 
+{
+    color: rgb(16,53,98);
+    border-radius: 150px;
+}
+.ldr-motoka 
+{
+    color: rgb(16,53,98);
+}
+.ldr-zambia
+{
+    color:#272121;
+}
+.notiers .omae-brand 
+{
+    font-family:'Calibri';
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bolder;
+    background-color: rgb(252, 252, 252);
+    line-height: 12px;
+}
+.i-cover 
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spinner-ads
+{
+    display: none;
+}
+@keyframes spinning {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.i-cover .spinning 
+{
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(26, 25, 25);
+    border-right: 5px solid white;
+    border-radius: 200px;
+    animation: spinning 2s infinite;
+}
+.carousel-inner 
+{
+    position: relative;
+}
+.carousel-control-prev,.carousel-control-next
+{
+    height: 50px;
+    position: absolute;
+    top: 50%;
+}
+@media screen and (max-width: 768px){
+    .dsk-top-most,.dsk-list-options
+    {
+        display: none;
+    }
+    .mb-top-most
+    {
+        display: block;
+        padding-top: 3%;
+    }
+    .mb-nav 
+    {
+        display: flex;
+        padding: 4% 2% 2% 2%;
+    }
+    .mb-nav .fa-bars 
+    {
+        padding: 3%;
+        border-radius: 10px;
+    }
+    .real-phone,.real-email 
+    {
+        display: none;
+    }
+    .mo-icons, .mo-iconies 
+    {
+        width: 50%;
+    }
+    .mo-icons .fa, 
+    .mo-icons .fab 
+    {
+        border: 1px solid rgb(14, 204, 14);
+        padding: 5%;
+        border-radius: 125px;
+    }
+    .mo-iconies 
+    {
+        text-align: right;
+        color: white;
+    }
+    .mo-icons 
+    {
+        text-align: left;
+    }
+    .mo-iconies .fa 
+    {
+        color: white;
+        padding: 5%;
+        border-radius: 125px;
+        background-color: rgb(14, 204, 14);
+    }
+    .m-splitter 
+    {
+        padding: 2%;
+    }
+    .slidein-nav 
+    {
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 5000;
+        height: 100vh;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        width: 100%;
+        padding: 5%;
+    }
+    .slidein-nav ul li
+    {
+        display: block;
+    }
+    .htransparency 
+    {
+        background-color: black;
+        height: 100vh;
+        padding-top: 2%;
+    }
+    .htransparency 
+    {
+        position: relative;
+        text-align: center;
+    }
+    .htransparency .header-text 
+    {
+        position: absolute;
+        bottom: 10%;
+        padding: 0% 6% 0% 3%;
+    }
+    .cities-cards .aside-props-wrap,
+    .state-cards .aside-props-wrap
+    {
+        min-width: 60%;
+    }
+    .state-card,.estate-card,.realtor-card
+    {
+        margin-top: 5%;
+    }
+    .props-wrap 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-props-wrap 
+    {
+        width: 100%;
+    }
+    .main-props-wrap .streteched-props 
+    {
+        width: 60%;
+        position: relative;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    .main-props-wrap .shortened-props 
+    {
+        width: 40%;
+        position: relative;
+        height: 250px;
+        margin: 2px;
+        border-radius: 10px;
+    }
+    .props-wrap .aside-props-transparency 
+    {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        opacity: 0.7756453;
+        border-radius: 10px;
+    }
+    .props-wrap .aside-props-wrap 
+    {
+        width: 100%;
+    }
+    .props-hero-theme 
+    {
+        font-size: large;
+    }
+    .props-hero-desc 
+    {
+        font-size: smaller;
+    }
+    .cities-cards-page .aside-props-wrap  
+    {
+        min-width: 48%;
+    }
+    .state-cards-page .aside-props-wrap  
+    {
+        max-width: 48%;
+        min-width: 48%;
+    }
+    .state-cards-page .state-card 
+    {
+        max-width: 48%;
+        min-width: 48%;
+    }
+    .app-footer 
+    {
+        margin-top: 130%;
+    }
+    .form-003,.aux-form-003
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 4%;
+    }
+    .form-003 .form-group 
+    {
+        margin-top: 3%;
+    }
+    .form-003 .form-group, 
+    .form-003 .form-group select 
+    {
+        width: 100%;
+    }
+    .filter-btn 
+    {
+        width: 100%;
+    }
+    .service img 
+    {
+       width: 250px;
+       height: 200px;
+    }
+    .services-arr 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .board 
+    {
+        width: 100%;
+    }
+}
